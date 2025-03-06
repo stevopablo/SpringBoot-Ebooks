@@ -1,7 +1,6 @@
 package com.bookCulture.ebooks.service;
 
 import com.bookCulture.ebooks.model.LivroModel;
-import com.bookCulture.ebooks.repository.LivroRepository;
 import com.bookCulture.ebooks.repository.iLivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +26,14 @@ public class LivroService {
 
     public void deletarLivro(String id){
         livroRepository.deleteById(id);
+    }
+
+    public List<LivroModel> buscarPorAutor(String autor){
+        return livroRepository.findByAutor(autor);
+    }
+
+    public List<LivroModel> buscarPorTitulo(String titulo){
+        return livroRepository.findByTitleContainingIgnoreCase(titulo);
     }
 
 }
