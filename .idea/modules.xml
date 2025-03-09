@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ebooks.iml" filepath="$PROJECT_DIR$/.idea/ebooks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SpringBoot-Ebooks.iml" filepath="$PROJECT_DIR$/.idea/SpringBoot-Ebooks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ebooks/ebooks.iml" filepath="$PROJECT_DIR$/ebooks/ebooks.iml" />
     </modules>
   </component>
 </project>
